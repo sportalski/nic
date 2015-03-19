@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+var map = L.map('map').setView([51.505, -0.09], 13);
   </head>
   <body>
       <div id="header">
@@ -66,27 +66,13 @@ $ git checkout gh-pages
 
 <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-var map = L.map('map').setView([51.505, -0.09], 13);
+
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <a href="LaTeX kod.txt">Tutaj</a> znajduje się kod w LaTeXu<br />
 <iframe src="https://docs.google.com/file/d/0B7KjzRN9TsdsSjZ3N1JrRG5fR2s/preview" width="800" height="480"></iframe>
-
-
-// create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('map').setView([51.505, -0.09], 13);
-
-// add an OpenStreetMap tile layer
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-// add a marker in the given location, attach some popup content to it and open the popup
-L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup. <br> Easily customizable.')
-    .openPopup();
 
 
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
